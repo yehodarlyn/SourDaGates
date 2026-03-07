@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SourDaGates — Mi Perfil</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="site-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar__logo-wrap">
+      <div class="sidebar__logo">SDG</div>
+      <div class="sidebar__sub">Urban Streetwear</div>
+    </div>
+    <ul class="sidebar__nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="pedidos.html">Mis Pedidos</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar__brand">SourDaGates</div>
+    <div class="topbar__actions">
+      <a href="perfil.html" class="topbar__btn active" style="text-decoration: none;">Perfil</a>
+      <a href="login.html" class="topbar__btn topbar__btn--logout" style="text-decoration: none;">Salir</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="anim-fade-up">
+      <h1 class="page-title">Mi <span>Perfil</span></h1>
+      <p class="text-mono" style="font-size: 0.8rem; color: var(--gray-mid);">GESTION DE CUENTA // USUARIO_AUTORIZADO</p>
+    </div>
+
+    <div class="form-row mt-lg" style="align-items: start;">
+      <section class="card" style="flex: 1; border-top: 3px solid var(--neon);">
+        <h2 class="form-card__title" style="font-size: 1.2rem; margin-bottom: 20px;">Datos del <span>Usuario</span></h2>
+        
+        <div class="form-group">
+          <label class="form-label">Nombre Completo</label>
+          <p style="color: var(--white); font-size: 1.1rem;">Jonathan Romero Orozco</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">ID de Estudiante</label>
+          <p style="color: var(--neon); font-family: var(--font-mono);">00000251632</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Correo Electronico</label>
+          <p style="color: var(--white);">jonathan.romero@estudiantes.itson.edu.mx</p>
+        </div>
+
+        <div style="margin-top: 25px;">
+          <button class="btn btn-outline" style="font-size: 0.8rem;">EDITAR INFORMACION</button>
+        </div>
+      </section>
+
+      <aside style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+        <div class="card">
+          <h3 class="form-card__title" style="font-size: 1rem; margin-bottom: 15px;">Direccion de <span>Envio</span></h3>
+          <p style="color: var(--gray-text); font-size: 0.9rem; line-height: 1.5;">
+            Calle 123, Colonia Centro,<br>
+            Ciudad Obregón, Sonora, CP 85000
+          </p>
+        </div>
+
+        <div class="card" style="background: rgba(255, 75, 0, 0.05); border: 1px dashed var(--neon);">
+          <h3 class="form-card__title" style="font-size: 1rem; margin-bottom: 10px;">Acceso <span>Rapido</span></h3>
+          <a href="pedidos.html" class="btn btn-ghost" style="width: 100%; justify-content: flex-start; padding: 10px 0;">📦 Ver mis ultimos pedidos</a>
+          <a href="carrito.html" class="btn btn-ghost" style="width: 100%; justify-content: flex-start; padding: 10px 0;">🛒 Ir al carrito actual</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Aplicaciones Web</span> — Unidad 2
+  </footer>
+</div>
+
+</body>
+</html>

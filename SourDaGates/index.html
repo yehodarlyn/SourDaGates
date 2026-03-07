@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SourDaGates — Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <aside class="sidebar">
+    <div class="sidebar__logo-wrap">
+      <div class="sidebar__logo">SDG</div>
+      <div class="sidebar__sub">Urban Streetwear</div>
+    </div>
+
+    <p class="sidebar__section-label">Menu</p>
+    <ul class="sidebar__nav">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="pedidos.html">Mis Pedidos</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </aside>
+
+<header class="topbar">
+    <div class="topbar__brand">SourDaGates</div>
+    <div class="topbar__actions">
+      <a href="perfil.html" class="topbar__btn" style="text-decoration: none;">
+        Perfil
+      </a>
+  
+      <a href="login.html" class="topbar__btn topbar__btn--logout" style="text-decoration: none;">
+        Salir
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="anim-fade-up">
+      <h1 class="page-title">Bienvenido a <span>SourDaGates</span></h1>
+      
+      <section class="card" style="border-left: 4px solid var(--neon); margin-bottom: 30px;">
+        <h2 style="font-family: var(--font-display); color: var(--neon); font-size: 1.5rem;">Informacion del Proyecto</h2>
+        <p style="color: var(--white); margin-top: 10px;"><strong>Desarrollado por:</strong> Jonathan Romero Orozco</p>
+        <p style="color: var(--white);"><strong>ID de Estudiante:</strong> 00000251632</p>
+        <p style="color: var(--gray-mid); font-size: 0.8rem; margin-top: 5px; font-family: var(--font-mono);">ITSON — Ingenieria en Software</p>
+      </section>
+    </div>
+
+    <div class="hero-section" style="margin-bottom: 40px;">
+      <h2 class="section-title">Nueva Coleccion: <span>Concrete Jungle</span></h2>
+      <p style="color: var(--gray-text); max-width: 600px; line-height: 1.6;">
+        Explora nuestra última línea de ropa urbana diseñada para la resistencia y el estilo industrial. 
+        Calidad premium, cortes oversized y acabados neón.
+      </p>
+      <a href="catalogo.html" class="btn btn-primary" style="margin-top: 20px; display: inline-flex; text-decoration: none;">Explorar Catalogo</a>
+    </div>
+
+    <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+      
+      <div class="product-card">
+        <div class="product-card__img" style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="assets/images/pngtree-black-hoodie-sweatshirt-casual-clothing-apparel-fashion-garment-winter-png-image_17731119.webp" alt="Sudadera Noir" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-card__body">
+          <p class="product-card__name">Sudadera Noir</p>
+          <p class="product-card__price">$85.00</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img" style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="assets/images/pngtree-futuristic-sneakers-png-image_15881221.png" alt="Botas Cyber" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-card__body">
+          <p class="product-card__name">Botas Cyber</p>
+          <p class="product-card__price">$120.00</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Aplicaciones Web</span> — Unidad 2
+  </footer>
+</div>
+
+</body>
+</html>

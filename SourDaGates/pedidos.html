@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SourDaGates — Mis Pedidos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="site-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar__logo-wrap">
+      <div class="sidebar__logo">SDG</div>
+      <div class="sidebar__sub">Urban Streetwear</div>
+    </div>
+    <ul class="sidebar__nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="pedidos.html" class="active">Mis Pedidos</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar__brand">SourDaGates</div>
+    <div class="topbar__actions">
+      <button class="topbar__btn">Perfil</button>
+      <button class="topbar__btn topbar__btn--logout">Salir</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="anim-fade-up">
+      <h1 class="page-title">Mis <span>Pedidos</span></h1>
+      <p class="text-mono" style="font-size: 0.8rem; color: var(--gray-mid);">RASTREA Y GESTIONA TUS COMPRAS DE STREETWEAR PREMIUM</p>
+    </div>
+
+    <section class="mt-lg">
+      <div class="card" style="padding: 0; overflow-x: auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Numero de Pedido</th>
+              <th>Fecha de Compra</th>
+              <th>Total Pagado</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color: var(--neon); font-weight: bold;">#SDG-00124</td>
+              <td>Oct 12, 2025</td>
+              <td>$195.00</td>
+              <td><span class="badge badge-green">Entregado</span></td>
+            </tr>
+            <tr>
+              <td style="color: var(--neon); font-weight: bold;">#SDG-00125</td>
+              <td>Oct 15, 2025</td>
+              <td>$85.00</td>
+              <td><span class="badge badge-neon">Enviado</span></td>
+            </tr>
+            <tr>
+              <td style="color: var(--neon); font-weight: bold;">#SDG-00126</td>
+              <td>Oct 20, 2025</td>
+              <td>$320.00</td>
+              <td><span class="badge badge-yellow">Pendiente</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Aplicaciones Web</span> — Unidad 2
+  </footer>
+</div>
+
+</body>
+</html>

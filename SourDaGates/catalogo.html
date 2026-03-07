@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SourDaGates — Catálogo de Productos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="site-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar__logo-wrap">
+      <div class="sidebar__logo">SDG</div>
+      <div class="sidebar__sub">Urban Streetwear</div>
+    </div>
+    <p class="sidebar__section-label">Menú</p>
+    <ul class="sidebar__nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html" class="active">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="pedidos.html">Mis Pedidos</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+    <div class="sidebar__footer">© 2025 SourDaGates</div>
+  </aside>
+
+  <header class="topbar">
+    <div>
+      <div class="topbar__brand">SourDaGates</div>
+      <div class="topbar__tagline">Aplicaciones Web · Unidad 2 · ITSON</div>
+    </div>
+    <div class="topbar__actions">
+      <a href="perfil.html" class="topbar__btn" style="text-decoration: none;">Perfil</a>
+      <a href="login.html" class="topbar__btn topbar__btn--logout" style="text-decoration: none;">Salir</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="anim-fade-up">
+      <h1 class="page-title">Catálogo de <span>Productos</span></h1>
+    </div>
+
+    <section class="form-card mt-md" style="max-width: 100%;">
+      <h2 class="form-card__title" style="font-size: 1.5rem;">Filtros de <span>Búsqueda</span></h2>
+      <form class="mt-sm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nombre del producto</label>
+            <input type="text" class="form-input" placeholder="Buscar por nombre...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Rango de precio máximo</label>
+            <input type="number" class="form-input" placeholder="Ingresa valor">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Filtrar por precios:</label>
+          <div style="display: flex; gap: 20px; margin-top: 5px;">
+            <label style="color: var(--gray-text); cursor: pointer;">
+              <input type="radio" name="filtro_precio" value="menor"> Menores que el valor
+            </label>
+            <label style="color: var(--gray-text); cursor: pointer;">
+              <input type="radio" name="filtro_precio" value="mayor"> Mayores que el valor
+            </label>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary mt-sm">Aplicar Filtros</button>
+      </form>
+    </section>
+
+    <section class="mt-lg">
+      <h2 class="section-title">Resultados</h2>
+      <div class="card" style="padding: 0; overflow-x: auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Enlace</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 80px; padding: 10px;">
+                <img src="assets/images/black-hooded-sweatshirt-floats-in-transparent-studio-drawstrings-hang-knitted-cuffs-and-pocket-wrinkled-fabric-pullover-outerwear-casual-clothing-simple-design-isolated-rendered-image-png.png" alt="Sudadera Noir" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid var(--black-border);">
+              </td>
+              <td>Sudadera Noir Oversized</td>
+              <td style="color: var(--neon); font-weight: bold;">$85.00</td>
+              <td><a href="detalles.html" style="color: var(--gray-light); font-size: 0.8rem;">Ver Detalles</a></td>
+              <td>
+                <button class="btn btn-primary" style="padding: 5px 10px; font-size: 0.7rem;">+ Carrito</button>
+                <a href="detalles.html#resenas" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.7rem; text-decoration: none; margin-left: 5px;">Dejar Reseña</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 80px; padding: 10px;">
+                <img src="assets/images/pngtree-3d-cargo-pant-for-man-png-image_16627034.png" alt="Pantalones Cargo" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid var(--black-border);">
+              </td>
+              <td>Pantalones Cargo Industriales</td>
+              <td style="color: var(--neon); font-weight: bold;">$110.00</td>
+              <td><a href="detalles.html" style="color: var(--gray-light); font-size: 0.8rem;">Ver Detalles</a></td>
+              <td>
+                <button class="btn btn-primary" style="padding: 5px 10px; font-size: 0.7rem;">+ Carrito</button>
+                <a href="detalles.html#resenas" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.7rem; text-decoration: none; margin-left: 5px;">Dejar Reseña</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Aplicaciones Web</span> — Unidad 2
+  </footer>
+</div>
+</body>
+</html>

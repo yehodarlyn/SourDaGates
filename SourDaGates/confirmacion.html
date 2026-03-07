@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SourDaGates — Confirmacion de Compra</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="site-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar__logo-wrap">
+      <div class="sidebar__logo">SDG</div>
+      <div class="sidebar__sub">Urban Streetwear</div>
+    </div>
+    <ul class="sidebar__nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="pedidos.html">Mis Pedidos</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar__brand">SourDaGates</div>
+    <div class="topbar__actions">
+      <button class="topbar__btn">Perfil</button>
+      <button class="topbar__btn topbar__btn--logout">Salir</button>
+    </div>
+  </header>
+
+  <main style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    
+    <div class="anim-fade-up" style="text-align: center; margin-bottom: 30px;">
+      <div style="font-size: 5rem; color: var(--neon); margin-bottom: 15px;">✔</div>
+      <h1 class="page-title">Misión <span>Cumplida</span></h1>
+      <p class="text-mono" style="color: var(--gray-light);">Tu equipo está asegurado. Preparate para el lanzamiento.</p>
+    </div>
+
+    <div class="card anim-fade-up" style="width: 100%; max-width: 550px; border-top: 4px solid var(--neon); animation-delay: 0.2s;">
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+        <div>
+          <p class="form-label">Numero de Pedido</p>
+          <p style="color: var(--neon); font-family: var(--font-mono); font-weight: bold;">#SDG-99201</p>
+        </div>
+        <div>
+          <p class="form-label">Fecha de Compra</p>
+          <p style="color: var(--white);">24 de Mayo, 2024</p>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <p class="form-label">Dirección de Envío</p>
+        <div style="display: flex; gap: 10px; align-items: start; margin-top: 5px;">
+          <span style="color: var(--neon);">📍</span>
+          <p style="color: var(--gray-text); font-size: 0.9rem;">
+            123 Industrial Way, Sector 7, Neo-Tokyo, 90210-X
+          </p>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--black-border); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+        <span class="text-mono" style="font-size: 0.8rem;">COSTO TOTAL PAGADO:</span>
+        <span style="font-family: var(--font-display); font-size: 2.2rem; color: var(--neon);">$210.00</span>
+      </div>
+
+      <a href="index.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        VOLVER AL INICIO
+      </a>
+      
+      <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+        <button class="btn-ghost" style="font-size: 0.7rem;">🖨 IMPRIMIR RECIBO</button>
+        <button class="btn-ghost" style="font-size: 0.7rem;">✉ ¿NECESITAS AYUDA?</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>Aplicaciones Web</span> — Unidad 2
+  </footer>
+</div>
+
+</body>
+</html>

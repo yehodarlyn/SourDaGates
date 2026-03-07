@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SourDaGates — Gestion de Reseñas</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="site-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar__logo-wrap">
+      <div class="sidebar__logo">SDG</div>
+      <div class="sidebar__sub">SISTEMA ADMIN</div>
+    </div>
+    <ul class="sidebar__nav">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../admin.html">Panel Principal</a></li>
+      <li><a href="admin_productos.html">Productos</a></li>
+      <li><a href="admin_usuarios.html">Usuarios</a></li>
+      <li><a href="admin_resenas.html" class="active">Reseñas</a></li>
+    </ul>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar__brand">SourDaGates <span>Admin</span></div>
+    <div class="topbar__actions">
+      <button class="topbar__btn">Perfil Admin</button>
+      <button class="topbar__btn topbar__btn--logout">Salir</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="anim-fade-up">
+      <h1 class="page-title">Gestion de <span>Reseñas</span></h1>
+      <p class="text-mono" style="font-size: 0.8rem; color: var(--gray-mid);">MODERACION DE COMENTARIOS // REPUTACION DE MARCA</p>
+    </div>
+
+    <section class="mt-lg">
+      <div class="card" style="padding: 0; overflow-x: auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Producto</th>
+              <th>Calificacion</th>
+              <th>Comentario</th>
+              <th>Fecha</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UrbanKnight_88</td>
+              <td>Sudadera Noir</td>
+              <td><span style="color: #FFD700;">★★★★★</span></td>
+              <td style="max-width: 250px; font-size: 0.8rem;">La calidad es increible. El corte oversized es perfecto.</td>
+              <td>2025-11-04</td>
+              <td>
+                <button class="btn-ghost" style="color: #ff3b3b; font-size: 0.7rem;">ELIMINAR</button>
+              </td>
+            </tr>
+            <tr>
+              <td>StreetMage</td>
+              <td>Cargo Pants</td>
+              <td><span style="color: #FFD700;">★★★★☆</span></td>
+              <td style="max-width: 250px; font-size: 0.8rem;">Muy resistentes para el skate, aunque tardaron en llegar.</td>
+              <td>2025-11-02</td>
+              <td>
+                <button class="btn-ghost" style="color: #ff3b3b; font-size: 0.7rem;">ELIMINAR</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Aplicaciones Web</span> — Unidad 2
+  </footer>
+</div>
+
+</body>
+</html>
