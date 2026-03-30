@@ -1,0 +1,164 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 mar 2026, 11:27:00 p.m.
+    Author     : jonyco
+*/
+
+/* VARIABLES GLOBALES - PALETA SDG */
+:root {
+    --bg-black: #050505;
+    --card-bg: #111111;
+    --neon: #00ffcc; /* Verde Neon Principal */
+    --neon-dim: rgba(0, 255, 204, 0.15);
+    --white: #ffffff;
+    --gray-text: #888888;
+    --gray-mid: #444444;
+    --black-border: #222222;
+    --error: #ff3b3b;
+}
+
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-black);
+    color: var(--white);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+/* LAYOUT GENÉRICO */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.mt-lg {
+    margin-top: 50px;
+}
+.text-center {
+    text-align: center;
+}
+
+/* FORMULARIOS DE AUTENTICACION--Login/Registro-- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-card {
+    background: var(--card-bg);
+    border: 1px solid var(--black-border);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 2px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    border: 1px solid var(--black-border);
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--neon);
+}
+
+/* BOTONES */
+.btn {
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background: var(--neon);
+    color: #000;
+}
+.btn-primary:hover {
+    background: #00cca3;
+    transform: translateY(-2px);
+}
+.btn--full {
+    width: 100%;
+}
+
+/* GRID DE PRODUCTOS--Para el Index-- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--black-border);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    border-color: var(--neon);
+}
+
+.product-card__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card__info {
+    padding: 20px;
+}
+.product-card__name {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.product-card__price {
+    color: var(--neon);
+    font-weight: bold;
+}
+
+/* ALERTAS */
+.alert {
+    padding: 12px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+.alert-error {
+    background: rgba(255, 59, 59, 0.1);
+    color: var(--error);
+    border-color: var(--error);
+}
